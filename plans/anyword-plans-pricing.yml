@@ -1,0 +1,47 @@
+generated: '2026-09-25'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.anyword.com/pricing
+sources:
+- https://www.anyword.com/pricing
+- https://www.anyword.com/blog/ai-writing-without-limits-anywords-new-pricing
+- https://www.anyword.com/blog/anyword-free-plan
+name: Anyword pricing
+audience: business-product
+pricing_basis: negotiated
+plans:
+- name: Starter
+  price_text: $ 49 /month
+  price: 49
+  billing_period: monthly
+  description: For solo marketers & freelancers
+- name: Starter
+  price_text: $ 39 /month (Billed yearly)
+  price: 39
+  billing_period: yearly
+  description: For solo marketers & freelancers (annual billing)
+- name: Data-Driven
+  price_text: $ 99 /month
+  price: 99
+  billing_period: monthly
+  description: For marketing teams
+- name: Data-Driven
+  price_text: $ 79 /month (Billed yearly)
+  price: 79
+  billing_period: yearly
+  description: For marketing teams (annual billing)
+- name: Business
+  price_text: Custom pricing
+  description: Custom plan for marketing teams
+- name: Enterprise
+  price_text: Custom pricing
+  description: Custom plan for enterprise teams
+- name: Free
+  price_text: Free
+  description: Free plan offering data-driven copywriting
+- name: Data-Driven Basic
+  price_text: $99/mo.
+  price: 99
+  billing_period: monthly
+  description: Basic paid plan
+docs: https://www.anyword.com/pricing

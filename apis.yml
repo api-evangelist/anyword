@@ -1,23 +1,96 @@
 aid: anyword
+
 name: Anyword
-description: 'Anyword is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/65a5365ee6f4219bc2d2f822/65d85069221f999621761943_Group%201261159146.png
+
+description: Anyword provides an AI-powered content generation platform that helps marketers, advertisers, and enterprises create high‑performing
+  copy for ads, social media, blogs, emails, and landing pages. Leveraging proprietary performance prediction models, Anyword predicts how well
+  each piece of content will resonate, enabling data‑driven optimization at scale. The platform offers APIs for content generation, SEO optimization,
+  and brand‑voice customization, supporting both SaaS and private‑model deployments for secure enterprise use.
+
 url: https://raw.githubusercontent.com/api-evangelist/anyword/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-25'
+
 modified: '2026-09-25'
+
 tags:
 - Company
-apis: []
+- AI
+- Content Generation
+- Marketing
+- SaaS
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Plans
+  url: plans/anyword-plans-pricing.yml
+- type: Compliance
+  url: https://www.anyword.com/security
+- type: Conformance
+  url: conformance/anyword-conformance.yml
+- type: Hosts
+  url: hosts/anyword-hosts.yml
+- type: Vendors
+  url: vendors/anyword-vendors.yml
+- type: Security
+  url: https://www.anyword.com/security
+- type: TrustCenter
+  url: security/anyword-trust-center.yml
+- type: DomainSecurity
+  url: security/anyword-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/anyword_stock/
+  url: https://www.anyword.com/
+- type: APIReference
+  url: https://www.anyword.com/api/
+- type: GettingStarted
+  url: https://www.anyword.com/quick-start-guide/
+- type: Support
+  url: https://support.anyword.com/
+- type: Blog
+  url: https://www.anyword.com/blog/
+- type: Pricing
+  url: https://www.anyword.com/pricing/
+- type: SignUp
+  url: https://go.anyword.com/login
+- type: TermsOfService
+  url: https://anyword.com/anyword-terms-of-service/
+- type: PrivacyPolicy
+  url: https://anyword.com/privacy-policy/
+
+apis:
+- name: Anyword API
+  description: Use Anyword’s API for Better Content
+  humanURL: https://www.anyword.com/api
+  baseURL: null
+  aid: anyword:anyword-api
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  method: derived
+  generated: '2026-09-25'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: the company publishes developer documentation but serves no machine-readable contract from it
+  evidence: www.anyword.com
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local

@@ -1,0 +1,18 @@
+generated: '2026-09-25'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.anyword.com/security
+sources:
+- https://www.anyword.com/security
+- https://www.anyword.com/privacy-policy
+standards:
+- id: soc2
+  conforms: true
+  evidence: Upholding SOC 2, ISO, and GDPR regulations, Anyword places your data's security at the forefront.
+- id: iso-27001
+  conforms: true
+  evidence: Upholding SOC 2, ISO, and GDPR regulations, Anyword places your data's security at the forefront.
+- id: gdpr
+  conforms: true
+  evidence: Upholding SOC 2, ISO, and GDPR regulations, Anyword places your data's security at the forefront.
+docs: https://www.anyword.com/security

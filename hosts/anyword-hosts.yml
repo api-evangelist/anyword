@@ -1,0 +1,94 @@
+generated: '2026-09-25'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 5
+  own: 5
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - identity
+  - legal
+  - support
+  - website
+hosts:
+- host: anyword.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - TermsOfService
+  - PrivacyPolicy
+  serves: []
+  registrable_domain: anyword.com
+  role: legal
+  relation: own
+- host: api.anyword.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: anyword.com
+  role: api
+  relation: own
+- host: go.anyword.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - SignUp
+  serves: []
+  registrable_domain: anyword.com
+  role: identity
+  relation: own
+- host: support.anyword.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Support
+  serves:
+  - hosting
+  vendor: hubspot
+  registrable_domain: anyword.com
+  role: support
+  relation: own
+- host: www.anyword.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Compliance
+  - Security
+  - Website
+  - APIReference
+  - GettingStarted
+  - Blog
+  - Pricing
+  serves:
+  - docs
+  - cdn
+  vendor: cloudflare
+  registrable_domain: anyword.com
+  role: website
+  relation: own
